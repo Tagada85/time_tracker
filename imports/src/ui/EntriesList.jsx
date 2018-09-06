@@ -13,7 +13,7 @@ class EntriesList extends React.Component {
 				{entries.map(e => {
 					return (
 						<li key={e._id}>
-							<a>{moment(e.day).format('dddd Do MMMM YYYY')}</a>
+							<a href={`/${e.day}`}>{moment(e.day).format('dddd Do MMMM YYYY')}</a>
 						</li>
 					)
 				})}
